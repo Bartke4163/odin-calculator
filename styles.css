@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  font-family: serif;
+}
+
+body {
+  background-color: rgb(32, 32, 32);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
+}
+
+.display {
+  height: 600px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid black;
+  box-shadow: 0 0 0px 3px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100px;
+}
+
+button {
+  width: 100%;
+  border: none;
+  padding: 0;
+  border: 1px solid black;
+  font-size: 26px;
+  color: #cccccc;
+}
+
+.zero {
+  width: 50%;
+}
+
+.coma,
+.equals {
+  width: 25%;
+}
+
+.output {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100px;
+  width: 100%;
+  border: 1px solid black;
+  background-color: rgb(105, 25, 25);
+  color: #cccccc;
+  padding-right: 5px;
+}
+
+.output-text {
+  font-size: 45px;
+  margin: 0;
+}
+
+.output-history-text {
+  margin: 0;
+  font-size: 20px;
+}
+
+.number {
+  background-color: rgb(150, 59, 59);
+}
+
+.other {
+  background-color: brown;
+}
+
+.number:hover {
+  background-color: rgb(200, 59, 59);
+}
+
+.other:hover {
+  background-color: rgb(216, 43, 43);
+}
