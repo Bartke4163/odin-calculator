@@ -7,34 +7,6 @@ const currentOperationText = document.querySelector('#currentOperation');
 const lastOperationText = document.querySelector('#lastOperation');
 const buttons = document.querySelectorAll('button');
 
-// function buttonsEnable() {
-//   for (i = 0; i < buttons.length; i++) {
-//     buttons[i].addEventListener('click', () => {
-//       if (buttons[i].classList.contains('number')) {
-//         buttons[i].addEventListener('click', () => {
-//           addNumber(button[i].textContent);
-//         });
-//       }
-//       if (buttons[i].classList.contains('clear')) {
-//         buttons[i].addEventListener('click', clear);
-//       }
-//       if (buttons[i].classList.contains('delete')) {
-//         buttons[i].addEventListener('click', deleteText);
-//       }
-//       if (buttons[i].classList.contains('operator')) {
-//         buttons[i].addEventListener('click', () => {
-//           addOperator(buttons[i].textContent);
-//         });
-//       }
-//       if (buttons[i].classList.contains('coma')) {
-//         buttons[i].addEventListener('click', addComa);
-//       }
-//       if (buttons[i].classList.contains('equals')) {
-//         buttons[i].addEventListener('click', evaluate);
-//       }
-//     });
-//   }
-// }
 function buttonsEnable() {
   buttons.forEach((button) => {
     if (button.classList.contains('number')) {
